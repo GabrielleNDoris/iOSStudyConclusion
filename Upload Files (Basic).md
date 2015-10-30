@@ -77,4 +77,13 @@ NSURLSession实现上传
 调用NSURLSession的方法：
  		
 	- (NSURLSessionUploadTask *)uploadTaskWithRequest:(NSURLRequest *)request fromData:(nullable NSData *)bodyData completionHandler:(void (^)(NSData * __nullable data, NSURLResponse * __nullable response, NSError * __nullable error))completionHandler;
-最后一个参数就是完成时候的回调block，包括成功和出现error的情况。 使用的task为NSURLSessionUploadTask，
+最后一个参数就是完成时候的回调block，包括成功和出现error的情况。 使用的task为NSURLSessionUploadTask。
+NSURLConnection
+----
+用NSURLConnection来实现上传，Request还是一样的设置。然后通过穿件一个普通的connection，再在需要的delegate方法里实现相应功能就好。e.g.
+
+	NSURLConnection *conn = [[NSURLConnection alloc] initWithRequest:request delegate:self];
+	//设置接受response的data
+	if (conn) {
+  		_mResponseData = [[NSMutableData alloc] init];
+	}
