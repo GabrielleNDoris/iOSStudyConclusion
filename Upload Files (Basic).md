@@ -49,7 +49,7 @@ Request Body的设置
 	文件内容
 	--TeXtBoundryGa--
 
-<br>多个(未证实😜)
+<br>多个
 	
 	--TeXtBoundryGa
 	Content-Disposition: form-data; name=Test1; filename=Test1.jpg
