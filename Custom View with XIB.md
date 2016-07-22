@@ -11,9 +11,9 @@
 ## 绑定过程
 1. 先来新建一个自定义的View，继承自`UIView`（必须的了）![Paste_Image.png](https://github.com/GabrielleNDoris/CustomViewDemo/blob/master/Screenshot/Snip20160721_1.png)
 2. 新建一个`xib`文件  
-	在这里，为了更好地识别，我们把这个xib的名字命名成我们之前新建的那个view子类。![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2539414-e40f5959fba9c3c0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-3. 更改xib的`File's Owner` class，指向我们创建好的class![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2539414-35f3e26b67c4ade5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
-4. 为xib中已存在的view绑定`IBOutlet`，命名为`contentView`。类比tableview cell中content view的作用。![Paste_Image.png](http://upload-images.jianshu.io/upload_images/2539414-67334e0919bcbe4d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+	在这里，为了更好地识别，我们把这个xib的名字命名成我们之前新建的那个view子类。![Paste_Image.png](https://github.com/GabrielleNDoris/CustomViewDemo/blob/master/Screenshot/Snip20160721_2.png)
+3. 更改xib的`File's Owner` class，指向我们创建好的class![Paste_Image.png](https://github.com/GabrielleNDoris/CustomViewDemo/blob/master/Screenshot/Snip20160721_4.png)
+4. 为xib中已存在的view绑定`IBOutlet`，命名为`contentView`。类比tableview cell中content view的作用。![Paste_Image.png](https://github.com/GabrielleNDoris/CustomViewDemo/blob/master/Screenshot/Snip20160721_6.png)
 5. 在`CustomView.m`中实现加载`Content View`    
       
        - (instancetype)initWithCoder:(NSCoder *)aDecoder
